@@ -3,7 +3,10 @@
     "home": "Home",
     "products": "Products",
     "about": "About",
-    "contact": "Contact"
+    "contact": "Contact",
+    "process": "Process",
+    "quality": "Quality",
+    "cta": "GET A QUOTE"
   },
   "home": {
     "hero": {
@@ -52,5 +55,9 @@
     "quick_links": "Quick Links",
     "contact_us": "Contact Us",
     "rights": "All rights reserved."
+  },
+  "metadata": {
+    "title": "ADC12 Aluminum Die Casting | Custom Manufacturing",
+    "description": "Custom ADC12 aluminum die casting parts built to your drawings. Automotive, motorcycle, industrial and custom manufacturing solutions."
   }
 }

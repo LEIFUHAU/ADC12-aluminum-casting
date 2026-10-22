@@ -1,8 +1,10 @@
-﻿'use client';
+'use client';
 
 import { useState, useEffect } from 'react';
+import { useTranslations } from 'next-intl';
 
 export default function Navigation() {
+  const t = useTranslations('navigation');
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -15,12 +17,12 @@ export default function Navigation() {
   }, []);
 
   const navLinks = [
-    { label: 'Home', href: '#home' },
-    { label: 'Products', href: '#products' },
-    { label: 'Process', href: '#process' },
-    { label: 'About Us', href: '#about' },
-    { label: 'Quality', href: '#quality' },
-    { label: 'Contact', href: '#contact' }
+    { label: t('home'), href: '#home' },
+    { label: t('products'), href: '#products' },
+    { label: t('process'), href: '#process' },
+    { label: t('about'), href: '#about' },
+    { label: t('quality'), href: '#quality' },
+    { label: t('contact'), href: '#contact' }
   ];
 
   return (
@@ -53,7 +55,7 @@ export default function Navigation() {
                 href="#contact"
                 className="ml-4 px-6 py-2 bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold rounded transition-colors"
               >
-                GET A QUOTE
+                {t('cta')}
               </a>
             </div>
 
@@ -100,7 +102,7 @@ export default function Navigation() {
                 className="block px-4 py-3 bg-orange-500 text-white text-sm font-semibold text-center rounded mt-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                GET A QUOTE
+                {t('cta')}
               </a>
             </div>
           </div>

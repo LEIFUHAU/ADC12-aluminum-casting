@@ -1,13 +1,23 @@
-﻿import {NextIntlClientProvider} from 'next-intl';
+import {NextIntlClientProvider} from 'next-intl';
+import {getTranslations} from 'next-intl/server';
 import {notFound} from 'next/navigation';
 import type {Metadata} from 'next';
 import {routing} from '@/i18n/routing';
 import '../globals.css';
 
-export const metadata: Metadata = {
-  title: 'ADC12 Aluminum Die Casting | Custom Manufacturing',
-  description: 'Custom ADC12 aluminum die casting parts built to your drawings. Automotive, motorcycle, industrial and custom manufacturing solutions.'
-};
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{locale: string}>;
+}): Promise<Metadata> {
+  const {locale} = await params;
+  const t = await getTranslations({locale, namespace: 'metadata'});
+  
+  return {
+    title: t('title'),
+    description: t('description')
+  };
+}
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({locale}));
