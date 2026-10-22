@@ -3,7 +3,10 @@
     "home": "首页",
     "products": "产品",
     "about": "关于",
-    "contact": "联系"
+    "contact": "联系",
+    "process": "工艺流程",
+    "quality": "质量认证",
+    "cta": "立即询价"
   },
   "home": {
     "hero": {
@@ -52,5 +55,10 @@
     "quick_links": "快速链接",
     "contact_us": "联系我们",
     "rights": "版权所有"
+  },
+  "metadata": {
+    "title": "ADC12铝合金压铸 | 定制制造服务",
+    "description": "按图纸定制ADC12铝合金压铸件。汽车、摩托车、工业及定制制造解决方案。"
   }
 }
+完善i18n导航文字、SEO多语言metadata
