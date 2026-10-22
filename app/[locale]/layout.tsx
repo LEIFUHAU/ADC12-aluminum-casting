@@ -1,26 +1,16 @@
-import {NextIntlClientProvider} from 'next-intl';
-import {getTranslations} from 'next-intl/server';
-import {notFound} from 'next/navigation';
-import type {Metadata} from 'next';
-import {routing} from '@/i18n/routing';
+import { NextIntlClientProvider } from 'next-intl';
+import { notFound } from 'next/navigation';
+import type { Metadata } from 'next';
+import { routing } from '@/i18n/routing';
 import '../globals.css';
 
-export async function generateMetadata({
-  params
-}: {
-  params: Promise<{locale: string}>;
-}): Promise<Metadata> {
-  const {locale} = await params;
-  const t = await getTranslations({locale, namespace: 'metadata'});
-  
-  return {
-    title: t('title'),
-    description: t('description')
-  };
-}
+export const metadata: Metadata = {
+  title: "ADC12 Aluminum Die Casting | Custom Manufacturing",
+  description: "Custom ADC12 aluminum die casting parts built to your drawings. Automotive, motorcycle, industrial custom casting."
+};
 
 export function generateStaticParams() {
-  return routing.locales.map((locale) => ({locale}));
+  return routing.locales.map((locale) => ({ locale }));
 }
 
 export default async function LocaleLayout({
@@ -28,9 +18,9 @@ export default async function LocaleLayout({
   params
 }: {
   children: React.ReactNode;
-  params: Promise<{locale: string}>;
+  params: Promise<{ locale: string }>;
 }) {
-  const {locale} = await params;
+  const { locale } = await params;
 
   if (!routing.locales.includes(locale as any)) {
     notFound();
@@ -46,7 +36,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body>
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
         </NextIntlClientProvider>
       </body>
