@@ -1,0 +1,56 @@
+{
+  "navigation": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "subtitle": "High-precision aluminum alloy die casting for automotive, electronics, and industrial applications. ISO 9001:2015 certified with 15+ years of manufacturing excellence."
+    }
+  },
+  "features": {
+    "title": "Why Choose Us",
+    "subtitle": "Professional ADC12 aluminum die casting solutions for global clients",
+    "feature1_title": "ISO Quality",
+    "feature1_desc": "ISO 9001:2015 certified with strict QC. 100% inspection before shipment.",
+    "feature2_title": "Fast Delivery",
+    "feature2_desc": "500+ tons monthly capacity. Quick turnaround time guaranteed.",
+    "feature3_title": "Precision",
+    "feature3_desc": "Advanced CNC machining. Tolerance ±0.01mm achievable.",
+    "feature4_title": "Global Service",
+    "feature4_desc": "Serving 40+ countries. Multilingual support available 24/7."
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Complete ADC12 die casting solutions for diverse industries",
+    "automotive_title": "Automotive Parts",
+    "automotive_desc": "Engine components, transmission housings, brackets, heat sinks for the automotive industry.",
+    "enclosure_title": "Electronic Enclosures",
+    "enclosure_desc": "Communication boxes, power supply cases, junction boxes with optional EMI shielding.",
+    "industrial_title": "Industrial Components",
+    "industrial_desc": "Machinery parts, valve bodies, pump housings with precision CNC machining.",
+    "custom_title": "Custom Die Casting",
+    "custom_desc": "OEM/ODM services with various surface finishing options: powder coating, anodizing, painting.",
+    "cta": "Request Quote"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Send us your inquiry and we'll respond within 24 hours",
+    "form": {
+      "name": "Your Name",
+      "email": "Email Address",
+      "company": "Company Name",
+      "message": "Your Requirements",
+      "submit": "Send Inquiry"
+    },
+    "info_title": "Contact Information"
+  },
+  "footer": {
+    "description": "Professional ADC12 aluminum die casting manufacturer serving global markets with premium quality products.",
+    "quick_links": "Quick Links",
+    "contact_us": "Contact Us",
+    "rights": "All rights reserved."
+  }
+}

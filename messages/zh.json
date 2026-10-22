@@ -1,0 +1,56 @@
+{
+  "navigation": {
+    "home": "首页",
+    "products": "产品",
+    "about": "关于",
+    "contact": "联系"
+  },
+  "home": {
+    "hero": {
+      "subtitle": "为汽车、电子和工业应用提供高精度铝合金压铸。ISO 9001:2015认证，15年以上制造卓越经验。"
+    }
+  },
+  "features": {
+    "title": "为什么选择我们",
+    "subtitle": "为全球客户提供专业的ADC12铝合金压铸解决方案",
+    "feature1_title": "ISO质量",
+    "feature1_desc": "ISO 9001:2015认证，严格质量控制。出货前100%检验。",
+    "feature2_title": "快速交付",
+    "feature2_desc": "月产能500+吨。保证快速交货时间。",
+    "feature3_title": "精密加工",
+    "feature3_desc": "先进的CNC加工。可达到±0.01mm公差。",
+    "feature4_title": "全球服务",
+    "feature4_desc": "服务40+国家。24/7多语言支持。"
+  },
+  "products": {
+    "title": "我们的产品",
+    "subtitle": "为不同行业提供完整的ADC12压铸解决方案",
+    "automotive_title": "汽车零件",
+    "automotive_desc": "发动机组件、变速箱壳体、支架、散热器等汽车行业零件。",
+    "enclosure_title": "电子外壳",
+    "enclosure_desc": "通讯盒、电源盒、接线盒，可选EMI屏蔽。",
+    "industrial_title": "工业组件",
+    "industrial_desc": "机械零件、阀体、泵壳，配备精密CNC加工。",
+    "custom_title": "定制压铸",
+    "custom_desc": "OEM/ODM服务，多种表面处理选项：喷粉、阳极氧化、喷漆。",
+    "cta": "立即询价"
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "发送您的询价，我们将在24小时内回复",
+    "form": {
+      "name": "您的姓名",
+      "email": "电子邮箱",
+      "company": "公司名称",
+      "message": "您的需求",
+      "submit": "提交询价"
+    },
+    "info_title": "联系信息"
+  },
+  "footer": {
+    "description": "专业的ADC12铝合金压铸制造商，为全球市场提供优质产品。",
+    "quick_links": "快速链接",
+    "contact_us": "联系我们",
+    "rights": "版权所有"
+  }
+}

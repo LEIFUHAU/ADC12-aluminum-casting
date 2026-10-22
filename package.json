@@ -1,0 +1,38 @@
+{
+  "name": "adc12-aluminum-casting",
+  "version": "1.0.0",
+  "description": "ADC12 Aluminum Die Casting International B2B Website",
+  "keywords": [
+    "ADC12",
+    "aluminum die casting",
+    "die casting manufacturer",
+    "aluminum alloy",
+    "B2B",
+    "international trade"
+  ],
+  "author": "Your Company Name",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "lucide-react": "^0.460.0",
+    "next": "15.2.0",
+    "next-intl": "^3.0.0",
+    "react": "^19",
+    "react-dom": "^19"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}

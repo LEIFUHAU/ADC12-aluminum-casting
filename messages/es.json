@@ -1,0 +1,56 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "products": "Productos",
+    "about": "Nosotros",
+    "contact": "Contacto"
+  },
+  "home": {
+    "hero": {
+      "subtitle": "Fundición a presión de aleación de aluminio de alta precisión para aplicaciones automotrices, electrónicas e industriales. Certificado ISO 9001:2015 con más de 15 años de excelencia."
+    }
+  },
+  "features": {
+    "title": "Por Qué Elegirnos",
+    "subtitle": "Soluciones profesionales de fundición de aluminio ADC12 para clientes globales",
+    "feature1_title": "Calidad ISO",
+    "feature1_desc": "Certificado ISO 9001:2015 con control de calidad estricto. Inspección 100% antes del envío.",
+    "feature2_title": "Entrega Rápida",
+    "feature2_desc": "Capacidad mensual de 500+ toneladas. Tiempo de entrega rápido garantizado.",
+    "feature3_title": "Precisión",
+    "feature3_desc": "Mecanizado CNC avanzado. Tolerancia de ±0.01mm alcanzable.",
+    "feature4_title": "Servicio Global",
+    "feature4_desc": "Sirviendo a más de 40 países. Soporte multilingüe disponible 24/7."
+  },
+  "products": {
+    "title": "Nuestros Productos",
+    "subtitle": "Soluciones completas de fundición ADC12 para diversas industrias",
+    "automotive_title": "Piezas Automotrices",
+    "automotive_desc": "Componentes de motor, carcasas de transmisión, soportes, disipadores de calor.",
+    "enclosure_title": "Carcasas Electrónicas",
+    "enclosure_desc": "Cajas de comunicación, cajas de fuentes de alimentación con blindaje EMI opcional.",
+    "industrial_title": "Componentes Industriales",
+    "industrial_desc": "Piezas de maquinaria, cuerpos de válvulas, carcasas de bombas con mecanizado CNC.",
+    "custom_title": "Fundición Personalizada",
+    "custom_desc": "Servicios OEM/ODM con varias opciones de acabado superficial: recubrimiento en polvo, anodizado, pintura.",
+    "cta": "Solicitar Cotización"
+  },
+  "contact": {
+    "title": "Contáctenos",
+    "subtitle": "Envíenos su consulta y responderemos en 24 horas",
+    "form": {
+      "name": "Su Nombre",
+      "email": "Correo Electrónico",
+      "company": "Nombre de la Empresa",
+      "message": "Sus Requisitos",
+      "submit": "Enviar Consulta"
+    },
+    "info_title": "Información de Contacto"
+  },
+  "footer": {
+    "description": "Fabricante profesional de fundición de aluminio ADC12 sirviendo mercados globales con productos de calidad premium.",
+    "quick_links": "Enlaces Rápidos",
+    "contact_us": "Contáctenos",
+    "rights": "Todos los derechos reservados."
+  }
+}

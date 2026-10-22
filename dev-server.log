@@ -1,0 +1,45 @@
+
+> adc12-aluminum-casting@1.0.0 dev
+> next dev
+
+   ▲ Next.js 15.2.0
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.3.5:3000
+
+ ✓ Starting...
+ ✓ Ready in 2.8s
+ ✓ Compiled /middleware in 288ms (213 modules)
+ ○ Compiling /[locale] ...
+ ✓ Compiled /[locale] in 1185ms (975 modules)
+ GET /zh 200 in 2155ms
+ GET /zh 200 in 152ms
+ GET /zh 200 in 93ms
+ ✓ Compiled /favicon.ico in 326ms (597 modules)
+ GET /favicon.ico 200 in 719ms
+ ✓ Compiled in 320ms (975 modules)
+ ✓ Compiled in 152ms (975 modules)
+ ✓ Compiled in 276ms (975 modules)
+ ✓ Compiled in 194ms (975 modules)
+ ✓ Compiled in 256ms (975 modules)
+ ✓ Compiled in 432ms (972 modules)
+ GET /zh 200 in 148ms
+ GET /zh 200 in 148ms
+ ✓ Compiled in 330ms (914 modules)
+ ✓ Compiled in 496ms (911 modules)
+ GET /zh 200 in 110ms
+ GET /en 200 in 114ms
+ GET /en 200 in 64ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 714ms (915 modules)
+ GET /zh/en%EF%BC%89%EF%BC%9A** 404 in 839ms
+ GET /zh/en%EF%BC%89%EF%BC%9A** 404 in 27ms
+ ✓ Compiled in 286ms (911 modules)
+ ✓ Compiled in 141ms (911 modules)
+ ✓ Compiled in 465ms (914 modules)
+ GET /zh 200 in 138ms
+ GET /en 200 in 97ms
+ GET /en 200 in 57ms
+ ✓ Compiled in 392ms (914 modules)
+ ✓ Compiled in 380ms (923 modules)
+ GET /zh 200 in 116ms
+ GET /en 200 in 114ms
