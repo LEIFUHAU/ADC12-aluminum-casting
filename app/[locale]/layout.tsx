@@ -1,7 +1,13 @@
 ﻿import {NextIntlClientProvider} from 'next-intl';
 import {notFound} from 'next/navigation';
+import type {Metadata} from 'next';
 import {routing} from '@/i18n/routing';
 import '../globals.css';
+
+export const metadata: Metadata = {
+  title: 'ADC12 Aluminum Die Casting | Custom Manufacturing',
+  description: 'Custom ADC12 aluminum die casting parts built to your drawings. Automotive, motorcycle, industrial and custom manufacturing solutions.'
+};
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({locale}));
