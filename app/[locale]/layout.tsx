@@ -4,10 +4,17 @@ import type { Metadata } from 'next';
 import { routing } from '@/i18n/routing';
 import '../globals.css';
 
-export const metadata: Metadata = {
-  title: "ADC12 Aluminum Die Casting | Custom Manufacturing",
-  description: "Custom ADC12 aluminum die casting parts built to your drawings. Automotive, motorcycle, industrial custom casting."
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const isChinese = locale === 'zh';
+
+  return {
+    title: isChinese ? 'ADC12 铝合金压铸 | 按图定制制造' : 'ADC12 Aluminum Die Casting | Custom Manufacturing',
+    description: isChinese
+      ? '专注 ADC12 铝合金压铸件，支持依据客户 3D 图纸定制，并提供加工与质量检验。'
+      : 'Custom ADC12 aluminum die castings manufactured from customer 3D drawings, with machining and inspection support.'
+  };
+}
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));

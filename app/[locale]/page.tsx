@@ -1,27 +1,29 @@
 import Navigation from '@/components/Navigation';
+import PageLoader from '@/components/PageLoader';
 import Hero from '@/components/Hero';
 import Stats from '@/components/Stats';
-import Products from '@/components/Products';
 import Applications from '@/components/Applications';
-import MaterialSpec from '@/components/MaterialSpec';
+import Products from '@/components/Products';
 import AboutUs from '@/components/AboutUs';
+import FactoryGallery from '@/components/FactoryGallery';
 import Process from '@/components/Process';
-import InquiryCTA from '@/components/InquiryCTA';
+import MaterialSpec from '@/components/MaterialSpec';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen">
+    <main className="page-shell">
+      <PageLoader />
       <Navigation />
       <Hero />
       <Stats />
-      <Products />
       <Applications />
-      <MaterialSpec />
+      <Products />
       <AboutUs />
+      <FactoryGallery />
       <Process />
-      <InquiryCTA />
+      <MaterialSpec />
       <Contact />
       <Footer />
     </main>

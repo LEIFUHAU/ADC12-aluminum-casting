@@ -1,56 +1,37 @@
-﻿'use client';
+'use client';
+
+import { useTranslations } from 'next-intl';
 
 export default function AboutUs() {
-  const stats = [
-    { value: '15+', label: 'Years of Experience' },
-    { value: '500+', label: 'Tons Monthly Capacity' },
-    { value: '40+', label: 'Countries Served' }
-  ];
+  const t = useTranslations('landing.factory');
+  const capabilities = [1, 2, 3];
+  const facts = [1, 2, 3, 4];
 
   return (
-    <section id="about" className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-10 items-center">
-          <div className="aspect-[4/3] rounded overflow-hidden bg-slate-100">
-            <img 
-              src="https://images.unsplash.com/photo-1565003352585-c6c5e5d17e09?w=800&q=80"
-              alt="ADC12 die casting factory workshop"
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          <div>
-            <p className="text-xs font-bold tracking-widest text-orange-500 uppercase mb-3">
-              ABOUT US
-            </p>
-            <h2 className="text-2xl lg:text-3xl font-bold text-slate-900 mb-6">
-              A die-casting partner built around your drawings
-            </h2>
-
-            <div className="grid grid-cols-3 gap-4 mb-6 pb-6 border-b border-slate-200">
-              {stats.map((stat, index) => (
-                <div key={index}>
-                  <div className="text-xl font-bold text-slate-900">{stat.value}</div>
-                  <div className="text-xs text-slate-500 mt-1">{stat.label}</div>
-                </div>
-              ))}
+    <section id="factory" className="factory-section">
+      <div className="factory-photo site-reveal">
+        <div className="factory-image" role="img" aria-label="Aluminum die casting factory workshop" />
+      </div>
+      <div className="factory-copy site-reveal">
+        <p className="eyebrow eyebrow-light">{t('eyebrow')}</p>
+        <h2>{t('titleLead')}<br /><em>{t('titleAccent')}</em></h2>
+        <p>{t('copy')}</p>
+        <div className="factory-facts" aria-label={t('factsLabel')}>
+          {facts.map((fact) => (
+            <div className="factory-fact" key={fact}>
+              <strong>{t(`fact${fact}Value`)}</strong>
+              <span>{t(`fact${fact}Label`)}</span>
             </div>
-
-            <p className="text-sm text-slate-600 leading-relaxed mb-4">
-              We are an aluminum die-casting and machining supplier working with ADC12 alloy. From tooling and casting to CNC machining, deburring and surface finishing, every step runs in house under one quality plan.
-            </p>
-            <p className="text-sm text-slate-600 leading-relaxed mb-6">
-              Engineering support starts before production: we review your drawings, flag manufacturability risks early and quote a realistic lead time.
-            </p>
-
-            <a
-              href="#contact"
-              className="inline-block px-6 py-3 bg-orange-500 hover:bg-orange-600 text-slate-900 font-semibold text-sm rounded transition-colors"
-            >
-              Learn More
-            </a>
-          </div>
+          ))}
         </div>
+        <ul className="capability-list">
+          {capabilities.map((item) => (
+            <li key={item}>
+              <span>0{item}</span>
+              <div><strong>{t(`item${item}Title`)}</strong><p>{t(`item${item}Text`)}</p></div>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );
