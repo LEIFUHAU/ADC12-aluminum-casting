@@ -25,7 +25,7 @@ export default function Footer() {
           <a href="mailto:longwenqi7799@gmail.com">longwenqi7799@gmail.com</a>
           <a href="tel:+8613431681201">+86 134 3168 1201</a>
           <a href="mailto:1fh2484495613@gmail.com">1fh2484495613@gmail.com</a>
-          <a href="https://wa.me/8618965869753" target="_blank" rel="noopener noreferrer">WhatsApp: +86 189 6586 9753</a>
+          <a href="https://wa.me/8618965869753?text=Hello%2C%20I%20am%20looking%20for%20an%20ADC12%20aluminum%20die%20casting%20supplier%20in%20China." target="_blank" rel="noopener noreferrer">WhatsApp: +86 189 6586 9753</a>
         </nav>
       </div>
       <div className="footer-bottom"><span>© {year} ADC12 Precision Casting</span><a href="#home">{t('backToTop')} ↑</a></div>
