@@ -2,6 +2,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { routing } from '@/i18n/routing';
+import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import VisitorTracker from '@/components/VisitorTracker';
 import '../globals.css';
 
@@ -47,6 +48,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           <VisitorTracker />
           {children}
+          <FloatingWhatsApp />
         </NextIntlClientProvider>
       </body>
     </html>

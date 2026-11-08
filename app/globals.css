@@ -209,6 +209,10 @@ h1 em, h2 em { color: var(--silver); font-family: var(--serif); font-weight: 500
 .footer-links a:hover { color: white; }
 .footer-bottom { grid-column: 1 / -1; display: flex; justify-content: space-between; gap: 20px; padding-top: 18px; border-top: 1px solid #3a4448; color: #859194; font: 9px var(--mono); }
 
+.floating-whatsapp { position: fixed; z-index: 999; right: 24px; bottom: 24px; display: grid; width: 56px; height: 56px; place-items: center; border-radius: 50%; color: white; background: #25D366; box-shadow: 0 8px 20px rgba(17, 90, 48, .35); transition: transform .18s ease, box-shadow .18s ease; }
+.floating-whatsapp:hover { transform: translateY(-2px); box-shadow: 0 11px 24px rgba(17, 90, 48, .42); }
+.floating-whatsapp svg { width: 29px; height: 29px; fill: currentColor; }
+
 .site-reveal { opacity: 1; transform: none; }
 .motion-ready .site-reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
 .motion-ready .site-reveal.is-visible { opacity: 1; transform: none; }
@@ -270,6 +274,8 @@ h1 em, h2 em { color: var(--silver); font-family: var(--serif); font-weight: 500
   .quality-section, .contact-section { grid-template-columns: 1fr; gap: 42px; }
   .site-footer { grid-template-columns: 1fr 1fr; padding: 32px 7vw; }
   .site-footer > div:first-child { grid-column: 1 / -1; }
+  .floating-whatsapp { right: 16px; bottom: calc(16px + env(safe-area-inset-bottom)); }
+  .site-footer { padding-bottom: calc(96px + env(safe-area-inset-bottom)); }
 }
 @media (max-width: 460px) {
   .brand-mark { gap: 7px; }
